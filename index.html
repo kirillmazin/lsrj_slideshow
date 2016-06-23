@@ -88,8 +88,8 @@
       padding: 0;
       list-style: none;
       position: absolute;
-      bottom: 22px;
-      right:23px;
+      bottom: 25px;
+      right:25px;
       z-index: 10;
     }
 
@@ -142,8 +142,7 @@
     }
 
     .container {
-      margin: 0 auto
-        border:1px solid red;
+        margin: 0 auto;
         position: relative;
         z-index: 1;
     }
@@ -155,14 +154,28 @@
         padding-right: 20px;
       }
       .container {
-        width: auto
+        width: auto;
+      }
+
+      .slidesjs-pagination {
+          bottom: 22px;
+          right:23px;
+          display:none;
       }
     }
 
     /* For smartphones */
+
     @media (max-width: 480px) {
       .container {
         width: auto
+
+      }
+
+      .slidesjs-pagination {
+          bottom: 22px;
+          right:23px;
+          display: none;
       }
     }
 
@@ -171,14 +184,12 @@
       .container {
         width: 724px
       }
-    }
-
-    /* For larger displays */
-    @media (min-width: 1200px) {
-      .container {
-        //width: 1170px
+      .slidesjs-pagination {
+          bottom: 18px;
+          right:18px;
       }
     }
+
   </style>
   <!-- SlidesJS Required: -->
 </head>
@@ -196,7 +207,7 @@
   <!-- End SlidesJS Required: Start Slides -->
 
   <!-- SlidesJS Required: Link to jQuery -->
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.js"></script>
   <!-- End SlidesJS Required -->
 
   <!-- SlidesJS Required: Link to jquery.slides.js -->
